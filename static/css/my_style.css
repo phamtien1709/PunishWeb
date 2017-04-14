@@ -1,0 +1,52 @@
+/*body{*/
+    /*background: url("/static/images/background1.png");*/
+    /*background-size: cover;*/
+/*}*/
+h1 {
+    font-family: "Chiller", sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+}
+.bigbox{
+    width: auto;
+    height: 200px;
+}
+
+.section{
+    padding: 40px 0;
+}
+
+.section img{
+    width:100%;
+}
+
+.cellsize{
+    height: 160px;
+    width: 33%;
+    color: #ffffff;
+}
+.tien{
+    width: 40%;
+}
+.main h1{
+    font-size: 2.8em;
+    font-weight: bold;
+    font-family:"Chiller", Georgia, sans-serif;
+}
+
+.main p{
+    font-family: "Segoe UI","Arial Rounded MT","Bauhaus 93",Georgia,sans-serif;
+}
+
+.punishbutton {
+    width: 164px;
+    height: 72px;
+    font-family: Chiller, Georgia, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    border: 3px solid white;
+    background-color: inherit;
+}
+.w3-btn:hover {
+    color: #e7ffe7;
+}
