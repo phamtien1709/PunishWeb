@@ -55,6 +55,11 @@ body{
     font-size: 2em;
 }
 
+.abouttext{
+    font-family: "dk_lemon_yellow_sunregular",'Amatic SC',"r0c0i SUNN Pro", cursive, monospace, sans-serif;
+    font-size: 1.8em;
+}
+
 @media only screen and (orientation: landscape) {
     body {
         background-color: lightblue;
