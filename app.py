@@ -35,7 +35,6 @@ image = [image1, image2, image3, image4, image5]
 
 app = Flask(__name__)
 
-
 @app.route('/', methods=["GET", "POST"])
 def home():
     image_random = image[random.randint(0, len(image)-1)]

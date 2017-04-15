@@ -5,22 +5,14 @@
     <title>Punish</title>
     <!--<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">-->
     <link rel="stylesheet" href="../static/css/style_w3css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <link rel="stylesheet" href="../static/css/my_style.css">
 
 </head>
 <body style="background-image: url('{{ image_random }}');">
-{#    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>#}
-{#    <script>#}
-{#        $(document).ready(function (){#}
-{#            $("#click").click(function (){#}
-{#                $('html, body').animate({#}
-{#                    scrollTop: $("#about").offset().top#}
-{#                }, 1000);#}
-{#            });#}
-{#        });#}
-{#    </script>#}
+
     <!--Main Session-->
-    <div class="w3-container w3-padding-32" id="mainsection">
+    <div class="w3-container w3-padding-32 main">
         <div class="w3-row-padding">
             <div class="w3-third l4 w3-margin-top w3-margin-bottom">
                 <div class="bigbox w3-cyan w3-round-xxlarge w3-justify w3-padding">
@@ -36,22 +28,22 @@
                 </div>
             </div>
             <div class="w3-third w3-margin-top w3-margin-bottom">
-                <div class="w3-black w3-round-xxlarge w3-justify w3-padding" >
+                <div class="bigbox w3-black w3-round-xxlarge w3-justify w3-padding" >
                     <div class="w3-white w3-round-xxlarge">
                         <h1 class="w3-center">Dangerous</h1>
                     </div>
-                    <div class="w3-black w3-center w3-opacity w3-hover-opacity-off w3-round-xxlarge w3-content w3-padding">
+                    <div class="w3-center w3-opacity w3-hover-opacity-off w3-round-xxlarge w3-content w3-padding">
                         <p>{{ text }}</p>
                         <p>{{ idea1 }} </p>
                     </div>
                 </div>
             </div>
             <div class="w3-third w3-margin-top w3-margin-bottom">
-                <div class="w3-justify w3-orange w3-round-xxlarge w3-padding" >
+                <div class="bigbox w3-justify w3-orange w3-round-xxlarge w3-padding" >
                     <div class="w3-white w3-round-xxlarge" >
                         <h1 class="w3-center">Interesting</h1>
                     </div>
-                    <div class="w3-orange w3-center w3-opacity w3-hover-opacity-off w3-round-xxlarge w3-content w3-padding">
+                    <div class="w3-center w3-opacity w3-hover-opacity-off w3-round-xxlarge w3-content w3-padding">
                         <p>{{ text }}</p>
                         <p>{{ idea3 }} </p>
                     </div>
@@ -63,21 +55,19 @@
 
     <!--Punish Button-->
     <form method="post" class="w3-container w3-center w3-padding-32">
-        <a href="#mainsection">
-            <input type="submit" class="w3-section w3-round-xxlarge w3-button w3-btn punishbutton" style="width: 164px;height: 72px;" value="Punish">
-        </a>
+        <input type="submit" class="w3-section w3-round-xxlarge w3-button w3-btn punishbutton" style="width: 164px;height: 72px;" value="Punish">
     </form>
 
     <!--About & Rule Button-->
-    <div class="w3-container w3-hide-small" id="about">
+    <div class="w3-container w3-hide-small main">
         <div class="w3-row-padding">
             <div class="w3-half w3-padding-32">
-                <a href="#" >
+                <a class="scroll" href="#aboutsession" >
                     <button class="w3-btn w3-black w3-round-xxlarge">About</button>
                 </a>
             </div>
             <div class="w3-half w3-padding-32 w3-right-align ">
-                <a href="#rulesession" >
+                <a class="scroll" href="#rulesession" >
                     <button class="w3-btn w3-black w3-round-xxlarge">Rule</button>
                 </a>
             </div>
@@ -99,13 +89,13 @@
                 </div>
             </div>
             <div class="w3-cell-row">
-                <div class="cellsize w3-container w3-cell w3-cell-middle" style="background-color: #e67e22;">
+                <div class="cellsize w3-container w3-cell w3-cell-middle" style="background-color: #16a085;">
                     <h3>"Trừng phạt" bạn bè bằng những trò đùa tinh quái</h3>
                 </div>
-                <div class="w3-container w3-cell w3-cell-middle cellsize" style="background-color: #34495e">
-                    <h3>Sử dụng khi chơi trò True or Dare khi bị bí ý tưởng "Trừng phạt"</h3>
+                <div class="cellsize w3-container w3-cell w3-cell-middle" style="background-color: #27ae60">
+                    <h3>Sử dụng khi chơi trò True or Dare khi bị bí ý tưởng "trừng phạt"</h3>
                 </div>
-                <div class="w3-container w3-cell w3-cell-middle cellsize" style="background-color: #c0392b;">
+                <div class="cellsize w3-container w3-cell w3-cell-middle" style="background-color: #c0392b;">
                     <h3>Chán đời muốn tự "Trừng phạt" mình cũng có thể thử</h3>
                 </div>
             </div>
@@ -113,10 +103,10 @@
                 <div class="cellsize w3-container w3-cell w3-cell-middle" style="background-color: #f1c40f">
                     <h3>Kiếm chuyện "Trừng phạt" vs những đứa mình không ưa</h3>
                 </div>
-                <div class="cellsize w3-container w3-cell w3-cell-middle" style="background-color: #16a085">
+                <div class="cellsize w3-container w3-cell w3-cell-middle" style="background-color: #e67e22">
                     <h3>Demo cho Hackathon cuối khóa của Techkid</h3>
                 </div>
-                <div class="cellsize w3-container w3-cell w3-cell-middle" style="background-color: #27ae60">
+                <div class="cellsize w3-container w3-cell w3-cell-middle" style="background-color: #34495e">
                     <h3 style="font-size: 50px;">...</h3>
                 </div>
             </div>
@@ -131,8 +121,8 @@
                      <img src="../static/images/about1.png" style="width: 100%";>
                  </div>
                  <div class="w3-col l6 m12">
-                     <h1 class="w3-center">Rabbit Team</h1>
-                     <button onclick="aboutFunction('mem1')" class="w3-button w3-black w3-block w3-left-align">Thỏ Tiên</button>
+                     <h1 class="w3-center "style="font-family: 'DK Lemon Yellow Sun'">Rabbit Team</h1>
+                     <button onclick="aboutFunction('mem1')" class="w3-button w3-black w3-block w3-left-align" style="font-family: 'DK Lemon Yellow Sun'; font-size: 1.8em" >Bunny Tiên</button>
                      <div id="mem1" class="w3-container w3-hide">
                          <ul class="w3-ul">
                           <li>Ý tưởng website</li>
@@ -140,7 +130,7 @@
                         </ul>
                      </div>
 
-                     <button onclick="aboutFunction('mem2')" class="w3-button w3-black w3-block w3-left-align">Thỏ Tiến</button>
+                     <button onclick="aboutFunction('mem2')" class="w3-button w3-black w3-block w3-left-align" style="font-family: 'DK Lemon Yellow Sun'; font-size: 1.8em"> Bunny Mr.T   </button>
                      <div id="mem2" class="w3-container w3-hide">
                          <ul class="w3-ul">
                           <li>Code back-end trâu nhất nhóm</li>
@@ -148,7 +138,7 @@
                         </ul>
                      </div>
 
-                     <button onclick="aboutFunction('mem3')" class="w3-button w3-black w3-block w3-left-align">Thỏ An Khanh</button>
+                     <button onclick="aboutFunction('mem3')" class="w3-button w3-black w3-block w3-left-align" style="font-family: 'DK Lemon Yellow Sun'; font-size: 1.8em"> Bunny An Khanh</button>
                      <div id="mem3" class="w3-container w3-hide">
                          <ul class="w3-ul">
                           <li>Kinh nghiệm Punish dày dặn nhất nhóm</li>
@@ -170,6 +160,12 @@
             x.className = x.className.replace(" w3-show", "");
         }
     }
+    jQuery(document).ready(function($) {
+    $(".scroll").click(function(event) {
+       event.preventDefault();
+       $('html,body').animate( { scrollTop:$(this.hash).offset().top } , 1000);
+    });
+});
     </script>
 
 </body>
