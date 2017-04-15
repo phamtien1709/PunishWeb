@@ -3,6 +3,14 @@ body{
     background-size: cover;
 }
 
+@font-face {
+    font-family: 'dk_lemon_yellow_sunregular';
+    src: url('/static/webfont/dk_lemon_yellow_sun-webfont.woff2') format('woff2'),
+    url('/static/webfont/dk_lemon_yellow_sun-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .bigbox{
     width: auto;
     height: 250px;
@@ -12,10 +20,6 @@ body{
     padding: 40px 0;
 }
 
-/*.section img{*/
-    /*width:100%;*/
-/*}*/
-
 .cellsize{
     height: 160px;
     width: 33%;
@@ -24,23 +28,23 @@ body{
 
 .main h1{
     font-size: 2.8em;
-    font-weight: bold;
-    font-family: "DK Lemon Yellow Sun", Chiller, Georgia, sans-serif;
+    /*font-weight: bold;*/
+    font-family: "dk_lemon_yellow_sunregular",'Lobster', cursive, sans-serif;
 }
 
 .main p{
-    font-family: "r0c0i SUNN Pro", sans-serif;
+    font-family: "r0c0i SUNN Pro",'Inconsolata', monospace, sans-serif;
     font-weight: bold;
     font-size: 2em;
 }
 .main button{
-    font-family: "DK Lemon Yellow Sun", sans-serif;
+    font-family: "dk_lemon_yellow_sunregular",'Lobster', cursive sans-serif;
     font-size: 1.5em;
 }
 .punishbutton {
     width: 164px;
     height: 72px;
-    font-family: "DK Lemon Yellow Sun", Chiller, Georgia, sans-serif;
+    font-family: "dk_lemon_yellow_sunregular", sans-serif;
     font-size: 2em;
     font-weight: bold;
     border: 5px solid white;
@@ -49,4 +53,10 @@ body{
 .section h3 {
     font-family: "r0c0i SUNN Pro", sans-serif;
     font-size: 2em;
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+        background-color: lightblue;
+    }
 }
