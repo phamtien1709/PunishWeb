@@ -1,9 +1,7 @@
 from flask import *
-import pyexcel
 import mlab
 import random
 from models.GetIdea import GetIdea
-import time
 
 mlab.connect()
 
@@ -63,9 +61,9 @@ def home():
         return render_template("index.html", idea1=idea1, idea2=idea2, idea3=idea3, text=text, image_random=image_random)
 
 
-@app.route('/test')
-def test():
-    return render_template("test.html")
+# @app.route('/test')
+# def test():
+#     return render_template("test.html")
 
 # @app.route('/images')
 # def send_images(path):
