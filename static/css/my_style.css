@@ -10,13 +10,7 @@ body{
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: 'r0c0i_sunn_prolight';
-    src: url('/static/webfont/r0c0i_-_sunn_pro_light-webfont.woff2') format('woff2'),
-         url('/static/webfont/r0c0i_-_sunn_pro_light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+
 .bigbox{
     width: auto;
     height: 250px;
@@ -39,7 +33,7 @@ body{
 }
 
 .main p{
-    font-family: 'r0c0i SUNN Pro','r0c0i_sunn_prolight','Amatic SC', cursive, monospace, sans-serif;
+    font-family: 'r0c0i SUNN Pro','Amatic SC', cursive, monospace, sans-serif;
     font-weight: bold;
     font-size: 1.8em;
 }
