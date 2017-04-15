@@ -4,13 +4,19 @@ body{
 }
 
 @font-face {
-    font-family: 'dk_lemon_yellow_sunregular';
+    font-family: 'dk_lemon_yellow_sunregular'; ''
     src: url('/static/webfont/dk_lemon_yellow_sun-webfont.woff2') format('woff2'),
     url('/static/webfont/dk_lemon_yellow_sun-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'r0c0i_sunn_prolight';
+    src: url('/static/webfont/r0c0i_-_sunn_pro_light-webfont.woff2') format('woff2'),
+         url('/static/webfont/r0c0i_-_sunn_pro_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 .bigbox{
     width: auto;
     height: 250px;
@@ -29,29 +35,29 @@ body{
 .main h1{
     font-size: 2.8em;
     /*font-weight: bold;*/
-    font-family: "dk_lemon_yellow_sunregular",'Lobster', cursive, sans-serif;
+    font-family: 'DK Lemon Yellow Sun','dk_lemon_yellow_sunregular','Amatic SC', cursive, sans-serif;
 }
 
 .main p{
-    font-family: "r0c0i SUNN Pro",'Inconsolata', monospace, sans-serif;
+    font-family: 'r0c0i SUNN Pro','r0c0i_sunn_prolight','Amatic SC', cursive, monospace, sans-serif;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 .main button{
-    font-family: "dk_lemon_yellow_sunregular",'Lobster', cursive sans-serif;
+    font-family: "dk_lemon_yellow_sunregular",'Amatic SC', cursive, monospace, sans-serif;
     font-size: 1.5em;
 }
 .punishbutton {
     width: 164px;
     height: 72px;
-    font-family: "dk_lemon_yellow_sunregular", sans-serif;
+    font-family: 'DK Lemon Yellow Sun','dk_lemon_yellow_sunregular','Amatic SC', cursive, monospace, sans-serif;
     font-size: 2em;
     font-weight: bold;
     border: 5px solid white;
     background-color: inherit;
 }
 .section h3 {
-    font-family: "r0c0i SUNN Pro", sans-serif;
+    font-family: "r0c0i SUNN Pro",'Amatic SC', cursive, monospace, sans-serif;
     font-size: 2em;
 }
 

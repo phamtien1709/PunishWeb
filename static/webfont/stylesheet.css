@@ -38,14 +38,13 @@
 
 
 
-@font-face {
-    font-family: 'r0c0i_sunn_prolight_italic';
-    src: url('r0c0i_-_sunn_pro_light_italic-webfont.woff2') format('woff2'),
-         url('r0c0i_-_sunn_pro_light_italic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
+/*@font-face {*/
+    /*font-family: 'r0c0i_sunn_prolight_italic';*/
+    /*src: url('r0c0i_-_sunn_pro_light_italic-webfont.woff2') format('woff2'),*/
+         /*url('r0c0i_-_sunn_pro_light_italic-webfont.woff') format('woff');*/
+    /*font-weight: normal;*/
+    /*font-style: normal;*/
+/*}*/
 
 
 
@@ -62,14 +61,14 @@
 
 
 
-@font-face {
-    font-family: 'r0c0i_sunn_proregular_italic';
-    src: url('r0c0i_-_sunn_pro_regular_italic-webfont.woff2') format('woff2'),
-         url('r0c0i_-_sunn_pro_regular_italic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+/*@font-face {*/
+    /*font-family: 'r0c0i_sunn_proregular_italic';*/
+    /*src: url('r0c0i_-_sunn_pro_regular_italic-webfont.woff2') format('woff2'),*/
+         /*url('r0c0i_-_sunn_pro_regular_italic-webfont.woff') format('woff');*/
+    /*font-weight: normal;*/
+    /*font-style: normal;*/
 
-}
+/*}*/
 
 
 
