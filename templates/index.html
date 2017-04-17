@@ -5,20 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Punish</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../static/css/style_w3css.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     <link rel="stylesheet" href="../static/css/my_style.css">
+    <link rel="stylesheet" href="../static/css/responsive_style.css">
     <link rel="shortcut icon" href="../static/images/icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 
 
 </head>
 <body style="background-image: url('{{ image_random }}');">
-
-    <!--Main Session-->
-    <div class="w3-container w3-padding-32 main">
+    <!--Header-->
+    <header>
+		<div id="header-inner">
+			<nav>
+				<a href="#" id="menu-icon"></a>
+				<ul>
+					<li><a href="#" class="current">Home</a></li>
+					<li><a class="scroll" href="#rulesection">Rule</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+    <!--Main Section-->
+    <div class="w3-container mainsection">
         <div class="w3-row-padding">
-            <div class="w3-third l4 m6 s12 w3-margin-top w3-margin-bottom">
-                <div class="bigbox w3-round-xxlarge w3-justify w3-padding" style="background-color: {{ co1 }};">
+            <div class="w3-third mainmargin">
+                <div class="colsize w3-round-xxlarge w3-justify w3-padding" id="funnycolor">
                     <div class="w3-white w3-round-xxlarge">
                         <h1 class="w3-center">Funny</h1>
                     </div>
@@ -30,8 +44,8 @@
                     </div>
                 </div>
             </div>
-            <div class="w3-third  w3-margin-top w3-margin-bottom">
-                <div class="bigbox w3-round-xxlarge w3-justify w3-padding" style="background-color: {{ co2 }};">
+            <div class="w3-third mainmargin">
+                <div class="colsize w3-black w3-round-xxlarge w3-justify w3-padding" id="dangerouscolor" >
                     <div class="w3-white w3-round-xxlarge">
                         <h1 class="w3-center">Dangerous</h1>
                     </div>
@@ -41,8 +55,8 @@
                     </div>
                 </div>
             </div>
-            <div class="w3-third w3-margin-top w3-margin-bottom">
-                <div class="bigbox w3-justify w3-round-xxlarge w3-padding" style="background-color: {{ co3 }};" >
+            <div class="w3-third mainmargin">
+                <div class="colsize w3-justify w3-round-xxlarge w3-padding" id="interestingcolor">
                     <div class="w3-white w3-round-xxlarge" >
                         <h1 class="w3-center">Interesting</h1>
                     </div>
@@ -57,68 +71,75 @@
     </div>
 
     <!--Punish Button-->
-    <form method="post" class="w3-container w3-center w3-padding-32">
-        <input type="submit" class="w3-section w3-round-xxlarge w3-button w3-btn punishbutton" style="width: 164px;height: 72px;" value="Punish">
+    <form method="post" class="w3-container w3-center punishpadding">
+        <input type="submit" class="w3-section w3-round-xxlarge w3-button w3-btn punishbutton" value="Punish">
     </form>
 
     <!--About & Rule Button-->
-    <div class="w3-container w3-hide-small main">
-        <div class="w3-row-padding">
-            <div class="w3-half w3-padding-32">
-                <a class="scroll" href="#aboutsession" >
+    <div class="w3-container buttonpadding">
+        <div class="w3-row-padding buttontext">
+            <div class="w3-quarter w3-padding-32">
+                <a class="scroll" href="#aboutsection" >
                     <button class="w3-btn w3-black w3-round-xxlarge">About</button>
                 </a>
             </div>
-            <div class="w3-half w3-padding-32 w3-right-align ">
-                <a class="scroll" href="#rulesession" >
+            <div class="w3-half">
+                <ul class="icon">
+                    <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="rulebutton w3-padding-32 w3-right-align ">
+                <a class="scroll" href="#rulesection" >
                     <button class="w3-btn w3-black w3-round-xxlarge">Rule</button>
                 </a>
             </div>
         </div>
     </div>
 
-    <!--Rule Session-->
-    <section class="section w3-hide-small"  style="margin-bottom: 50px">
-        <div class="w3-container w3-center w3-margin w3-padding-64" id="rulesession" >
-            <div class="w3-cell-row">
-                <div class="cellsize w3-container w3-cell w3-cell-middle" style="background-color: #1abc9c;width: 33%">
-                    <h3>"Trừng phạt" người yêu quên sinh nhật bạn</h3>
-                </div>
-                <div class="cellsize w3-container w3-cell w3-cell-middle" style="background-color: #2ecc71;width: 33%">
-                    <h3>"Trừng phạt" học sinh khi chúng không làm bài tập</h3>
-                </div>
-                <div class="cellsize w3-container w3-cell w3-cell-middle" style="background-color: #3498db;width: 33%">
-                    <h3>Chơi 3 cây bị thua</h3>
-                </div>
-            </div>
-            <div class="w3-cell-row">
-                <div class="cellsize w3-container w3-cell w3-cell-middle" style="background-color: #16a085;">
-                    <h3>"Trừng phạt" bạn bè bằng những trò đùa tinh quái</h3>
-                </div>
-                <div class="cellsize w3-container w3-cell w3-cell-middle" style="background-color: #27ae60">
-                    <h3>Sử dụng khi chơi trò True or Dare khi bị bí ý tưởng "trừng phạt"</h3>
-                </div>
-                <div class="cellsize w3-container w3-cell w3-cell-middle" style="background-color: #c0392b;">
-                    <h3>Chán đời muốn tự "Trừng phạt" mình cũng có thể thử</h3>
-                </div>
-            </div>
-            <div class="w3-cell-row">
-                <div class="cellsize w3-container w3-cell w3-cell-middle" style="background-color: #f1c40f">
-                    <h3>Kiếm chuyện "Trừng phạt" vs những đứa mình không ưa</h3>
-                </div>
-                <div class="cellsize w3-container w3-cell w3-cell-middle" style="background-color: #e67e22">
-                    <h3>Demo cho Hackathon cuối khóa của Techkid</h3>
-                </div>
-                <div class="cellsize w3-container w3-cell w3-cell-middle" style="background-color: #34495e">
-                    <h3 style="font-size: 50px;">...</h3>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!--Rule Section-->
+    <div class="rulepadding" id="rulesection">
+        <section class="rulesession"  >
+            <section class="one-third" id="c1">
+                <h3>"Trừng phạt" người yêu quên sinh nhật bạn</h3>
+            </section>
+            <section class="one-third" id="c2">
+                <h3>"Trừng phạt" học sinh khi chúng không làm bài tập</h3>
+            </section>
+            <section class="one-third" id="c3">
+                <h3>Chơi 3 cây bị thua</h3>
+            </section>
+        </section>
+        <section class="rulesession">
+            <section class="one-third" id="c4">
+                <h3>"Trừng phạt" bạn bè bằng những trò đùa tinh quái</h3>
+            </section>
+            <section class="one-third" id="c5">
+                <h3>Sử dụng khi chơi trò True or Dare khi bị bí ý tưởng "trừng phạt"</h3>
+            </section>
+            <section class="one-third" id="c6">
+                <h3>Chán đời muốn tự "Trừng phạt" mình cũng có thể thử</h3>
+            </section>
+        </section>
+        <section class="rulesession">
+            <section class="one-third" id="c7">
+                <h3>Kiếm chuyện "Trừng phạt" vs những đứa mình không ưa</h3>
+            </section>
+            <section class="one-third" id="c8">
+                <h3>Demo cho Hackathon cuối khóa của Techkid</h3>
+            </section>
+            <section class="one-third" id="c9">
+                <h3>* * *</h3>
+            </section>
+        </section>
+    </div>
 
-    <!--About Session-->
-    <section class="section">
-         <div class="w3-container w3-hide-small" id="aboutsession">
+    <!--About Section-->
+    <section class="section w3-container w3-padding-32" >
+         <div class="w3-container" id="aboutsection" >
              <div class="w3-row-padding">
                  <div class="w3-col l6 m12 ">
                      <img src="../static/images/about1.png" style="width: 100%";>
@@ -133,7 +154,7 @@
                         </ul>
                      </div>
 
-                     <button onclick="aboutFunction('mem2')" class="w3-button w3-black w3-block w3-left-align"> Bunny Mr.T   </button>
+                     <button onclick="aboutFunction('mem2')" class="w3-button w3-black w3-block w3-left-align"> Bunny Mr.T</button>
                      <div id="mem2" class="w3-container w3-hide">
                          <ul class="w3-ul">
                           <li>Code back-end trâu nhất nhóm</li>
@@ -144,8 +165,7 @@
                      <button onclick="aboutFunction('mem3')" class="w3-button w3-black w3-block w3-left-align"> Bunny An Khanh</button>
                      <div id="mem3" class="w3-container w3-hide">
                          <ul class="w3-ul">
-                          <li>Kinh nghiệm Punish dày dặn nhất nhóm</li>
-                          <li>Chuyên database</li>
+                          <li>Kinh nghiệm Punish dày dặn nhất nhóm >> Chuyên database</li>
                           <li>Làm đồ họa cho những chú thỏ</li>
                           <li>Có đội ngũ Marketing hùng hậu</li>
                         </ul>
@@ -154,10 +174,24 @@
              </div>
          </div>
     </section>
-    <div class="w3-center w3-padding-32">
-        <iframe width="854px" height="480px" src="https://www.youtube.com/embed/JGwWNGJdvx8">
+    <div class="w3-center w3-padding-16">
+        <iframe height="100%" src="https://www.youtube.com/embed/JGwWNGJdvx8">
         </iframe>
     </div>
+    <!--Footer Section-->
+    <footer>
+		<ul class="social">
+			<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+		</ul>
+	</footer>
+    <footer class="second scroll neonfont">
+		<p> Made by Happy Rappid Team</p>
+	</footer>
+    <!--End Second Footer-->
     <script>
     function aboutFunction(id) {
         var x = document.getElementById(id);

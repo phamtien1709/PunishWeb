@@ -5,6 +5,7 @@
 body{
     background: url("/static/images/background1.png");
     background-size: cover;
+    font-family: 'DK Lemon Yellow Sun','dk_lemon_yellow_sunregular','Amatic SC', cursive, monospace, sans-serif;
 }
 
 @font-face {
@@ -14,37 +15,79 @@ body{
     font-weight: normal;
     font-style: normal;
 }
-
-.bigbox{
-    width: auto;
-    height: auto;
+/*---------------------------------------------Header--------------------------------------*/
+header{
+    display: none;
 }
-
-.section{
-    padding: 40px 0;
+ul{
+   list-style-type: none;
 }
-
-.cellsize{
-    height: 160px;
-    width: 33%;
-    color: #ffffff;
+nav {
+    float: right;
+    padding: 25px 20px 0 0;
 }
-
-.main h1{
+#menu-icon{
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: url("/static/images/nav.png") center;
+}
+a:hover#menu-icon{
+    border-radius: 4px 4px 0 0;
+}
+ul{
+    list-style-type: none;
+}
+nav ul li{
+    font-family: 'Amatic SC',sans-serif;
+    font-size: 150%;
+    display: inline-block;
+    float: left;
+    padding: 10px;
+}
+nav ul li a {
+    color: #1abc9c;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #d35400;
+}
+.current{
+    color: #7f8c8d;
+}
+/*---------------------------------------------Main Section--------------------------------------*/
+.mainsection{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.mainsection h1{
     font-size: 2.8em;
-    /*font-weight: bold;*/
     font-family: 'DK Lemon Yellow Sun','dk_lemon_yellow_sunregular','Amatic SC', cursive, sans-serif;
 }
 
-.main p{
+.mainsection p{
     font-family: 'Amatic SC', cursive, monospace, sans-serif;
     font-weight: bold;
     font-size: 1.8em;
 }
-.main button{
+.mainsection button{
     font-family: "dk_lemon_yellow_sunregular",'Amatic SC', cursive, monospace, sans-serif;
     font-size: 1.5em;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
+.mainmargin{
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+#funnycolor{
+    background: lightseagreen;
+}
+#interestingcolor{
+    background: palevioletred;
+}
+
+/*---------------------------------------------Punish Button--------------------------------------*/
 .punishbutton {
     width: 164px;
     height: 72px;
@@ -54,60 +97,122 @@ body{
     border: 5px solid white;
     background-color: inherit;
 }
-.section h3 {
+.punishpadding{
+    padding-top:25px;
+    padding-bottom:20px;
+}
+/*---------------------------------------------About & Rule Button----------------------------------*/
+.buttonpadding{
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.buttontext{
+    font-size: x-large;
+}
+.icon{
+    list-style-type: none;
+    text-align: center;
+}
+.icon li{
+    display: inline;
+}
+.icon i {
+    font-size: 150%;
+    margin: 0%;
+    padding: 2% 5% 2% 2%;
+    color: white;
+}
+.icon i:hover{
+    color: #1abc9c;
+}
+/*-------------------------------------------------Rule Section--------------------------------------*/
+.rulepadding{
+    padding: 0;
+}
+.rulesession{
+    float: left;
+    width: 100%;
+}
+.one-third {
+    width: 33.3333333333%;
+    height: 217px;
+    float: left;
+    /*display: block;*/
+}
+h3 {
     font-family: "r0c0i SUNN Pro",'Amatic SC', cursive, monospace, sans-serif;
-    font-size: 2em;
+    font-size: 150%;
+    line-height: 155%;
+    padding: 15%;
+    font-weight: 500;
+    color: black ;
+    text-align: center;
+}
+h3:hover{
+    color: white ;
 }
 
+#c1{
+    background-color: #1abc9c;
+}
+#c2{
+    background-color: #2ecc71;
+}
+#c3{
+    background-color: #3498db;
+}
+#c4{
+    background-color: #16a085;
+}
+#c5{
+    background-color: #27ae60;
+}
+#c6{
+    background-color: #c0392b;
+}
+#c7{
+    background-color: #f1c40f ;
+}
+#c8{
+    background-color: #e67e22;
+}
+#c9{
+    background-color: #34495e;
+}
+
+/*-------------------------------------------------About Section--------------------------------------*/
 .abouttext{
     font-family: "dk_lemon_yellow_sunregular",'Amatic SC',"r0c0i SUNN Pro", cursive, monospace, sans-serif;
     font-size: 1.8em;
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
-    }  }
-.neonfont {
-    text-decoration: none;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-}
-.neonfont:hover {
-    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
-    -moz-animation: neon2 1.5s ease-in-out infinite alternate;
-    animation: neon2 1.5s ease-in-out infinite alternate;
-}
-.neonfont:hover {
-    color: #000000;
-}
-@-webkit-keyframes neon2 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0c7ff9, 0 0 70px #0c7ff9, 0 0 80px #0c7ff9, 0 0 100px #0c7ff9, 0 0 150px #0c7ff9;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 15px #0c7ff9, 0 0 35px #0c7ff9, 0 0 40px #0c7ff9, 0 0 50px #0c7ff9, 0 0 75px #0c7ff9;
-  }
-}
 
-
-@-moz-keyframes neon2 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0c7ff9, 0 0 70px #0c7ff9, 0 0 80px #0c7ff9, 0 0 100px #0c7ff9, 0 0 150px #0c7ff9;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #0c7ff9, 0 0 35px #0c7ff9, 0 0 40px #0c7ff9, 0 0 50px #0c7ff9, 0 0 75px #0c7ff9;
-  }
+/*------------------------------------------------------Footer---------------------------------------*/
+footer{
+    background-color: inherit;
+    width: 100%;
 }
-
-
-@keyframes neon2 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0c7ff9, 0 0 70px #0c7ff9, 0 0 80px #0c7ff9, 0 0 100px #0c7ff9, 0 0 150px #0c7ff9;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #0c7ff9, 0 0 35px #0c7ff9, 0 0 40px #0c7ff9, 0 0 50px #0c7ff9, 0 0 75px #0c7ff9;
-  }
+.social{
+    list-style-type: none;
+    text-align: center;
+}
+.social li{
+    display: inline;
+}
+.social i {
+    font-size: 230%;
+    margin: 0%;
+    padding: 2% 5% 0.5% 2%;
+    color: white;
+}
+.social i:hover{
+    color: darkslategrey;
+}
+footer.second p{
+    padding: 5px 0 5px 0;
+    text-align: center;
+    margin: 0;
+    color: white;
+    font-family: inherit;
+    font-size: 1.5em;
 }
